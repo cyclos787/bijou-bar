@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    
+    <!-- ------------- -->
+    <!--   Site Head   -->
+    <!-- ------------- -->
+
+    <head>
+		  <meta charset="utf-8">
+		  <title>Bijou Bartender Alliance</title>
+      <meta name="description" content="Bijou Bartender Alliance">
+      <meta name="keywords" content="Events, Rantal, Bar, Private, Liquor, Non-Alcoholic, Service, Professional, Drinks">
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <link rel="stylesheet" type="text/css" href="bijoumain.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+      
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+      <meta name="msapplication-TileColor" content="#2b5797">
+      <meta name="theme-color" content="#333333">
+
+    </head>
+
+    <!-- ------------- -->
+    <!--   Site Body   -->
+    <!-- ------------- -->
+
+    <body>
+        
+      <!-- Header -->
+      <header>
+                
+        <div id="mobile-nav-button">
+          <a href="javascript:void(0);" class="nav-menu" onclick="navOpen()">
+            <img src="assets/bijou-menu.svg" alt="Navigation Menu" />
+          </a>
+        </div>
+        <nav id="navigation">
+          <a class="nav-link home" href="index.html">HOME</a>
+          <a class="nav-link" href="ourstory.html">OUR STORY</a>
+          <!-- <a class="nav-link" href="booking.html">BOOKING</a> -->
+          <a class="bijou-logo" href="index.html">
+            <img src="assets/bijou-arch.png" />
+          </a>
+          <!-- <a class="nav-link" href="gallery.html">GALLERY</a> -->
+          <a class="nav-link active" href="contactus.html">CONTACT US</a>
+        </nav>
+        <div id="mobile-nav-close">
+          <a href="javascript:void(0);" class="nav-menu" onclick="navClose()">
+            <img src="assets/bijou-close.svg" alt="Close" />
+          </a>
+        </div>
+
+      </header>
+        
+        <!-- ------------------- -->
+        <!-- Page Content (CONTACT US)-->
+        <!-- ------------------- -->
+
+
+        <div id="content">
+          <div id="spacer"></div>
+          <h1>Contact Us</h1>
+          <h2>Inquire for your event here</h2>
+          <div id="contact-box">
+            <img src="assets/cocktail-temp-2.jpg" alt="Cocktail with garnish." />
+            <form action="https://formspree.io/f/xeojjbqw" method="post">
+              <label for="name">Name</label>
+              <input name="Name" id="name" type="text" required>
+              <label for="email">Email</label>
+              <input name="Email" id="email" type="email" required>
+              <label for="location">Location</label>
+              <input name="Location" id="location" type="text">
+              <label for="partysize">Estimated # of Guests</label>
+              <input name="Party Size" id="partysize" type="number">
+              <label for="message">Message</label>
+              <textarea name="Message" id="message" maxlength="1000" required></textarea>
+              <input type="submit" value="SUBMIT"></input>
+            </form>
+          </div>
+          
+        </div>
+
+        <footer>
+          <img src="assets/bijou-full.png" alt="Bijou"/>
+          <span>&copy;&#xFE0E; 2024 Bijou Bartender Alliance</span>
+        </footer>
+        
+        <script defer src="bijoumain.js"></script>
+
+    </body>
+
+</html>
