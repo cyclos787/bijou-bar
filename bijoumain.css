@@ -379,6 +379,8 @@ input[type=submit] {
   padding: 6px 12px 2px 12px;
   text-decoration: none;
   border: 4px double #F9AE57;
+  appearance: auto;
+  -webkit-appearance: none;
   border-radius: 4px;
   margin-top: 1rem;
   transition: text-shadow 200ms, color 200ms, border-color 200ms;
@@ -386,8 +388,6 @@ input[type=submit] {
 input[type=submit]:hover {
   color: #FFD3A1;
   border-color: #FFD3A1;
-  appearance: auto;
-  -webkit-appearance: none;
   text-shadow: 0px 0px 8px #FFD3A1, 0px 0px 8px #FFD3A1;
 }
 @media screen and (min-width: 480px) { /* tablets */
