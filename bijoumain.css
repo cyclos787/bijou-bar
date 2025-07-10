@@ -3,6 +3,11 @@
 /*****************************************/
 
 /*
+Designed and built by Sal Costa
+https://salcosta.dev
+*/
+
+/*
 Black: #000000  rgb(12, 12, 12)
 Foam White: #FFFBEE
 Gray: #1A1A18 (foam white at 10% opacity)
@@ -196,9 +201,33 @@ img.deco {
   img.deco, #nav-space svg {
     display: none;
   }
-  h1 { font-size: 1.8rem; }
-  h1 span.first { font-size: 2.4rem; }
-  h2 { font-size: 1.6rem; }
+  h1 { 
+    font-size: 1.8rem; 
+  }
+  h1 span.first { 
+    font-size: 2.4rem; 
+  }
+  h2 { 
+    font-size: 1.6rem; 
+  }
+  .bijou-button:hover span,
+  .bijou-button:focus-visible span {
+    color: #FFD3A1;
+    text-shadow: none;
+    transform: none;
+  }
+  .bijou-button:hover .border.wide,
+  .bijou-button:focus-visible .border.wide {
+    border-color: #FFD3A1;
+    width: 270px;
+    height: 40px;
+  }
+  .bijou-button:hover .border.tall,
+  .bijou-button:focus-visible .border.tall {
+    border-color: #FFD3A1;
+    width: 258px;
+    height: 50px;
+  }
 }
 @media screen and (max-width: 480px) { /* phones */
   #content {
@@ -345,6 +374,10 @@ svg.nav-menu.menu-open rect.menu-bottom {
   nav a.nav-link { /* nav links */
     font-size: 2rem;
     width: auto;
+  }
+  nav a.nav-link:hover,
+  nav a.nav-link:focus-visible {
+    text-shadow: none;
   }
   nav a.nav-link.home { /* home text link */
     display: inline-block;
@@ -576,10 +609,10 @@ footer {
 }
 footer img {
   margin-bottom: 1rem;
-  height: 80px;
+  width: 100px;
 }
 @media screen and (max-width: 480px) {
   footer img {
-    height: 60px;
+    width: 80px;
   }
 }
