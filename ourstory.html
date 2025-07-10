@@ -7,12 +7,14 @@
 
     <head>
 		  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 		  <title>Bijou Bartender Alliance</title>
-      <meta name="description" content="Bijou Bartender Alliance">
-      <meta name="keywords" content="Events, Rantal, Bar, Private, Liquor, Non-Alcoholic, Service, Professional, Drinks">
-      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <meta name="description" content="Bijou Bartender Alliance is a hospitality-driven event curation service. We bring your vision to life with experienced bartenders and delicious beverages.">
+      <meta name="keywords" content="Bijou, Bartender, Bartending, Alliance, Events, Event, Wedding, Weddings, Celebrations, Rental, Bar, Private, Liquor, Non-Alcoholic, Beer, Wine, Glass, Hospitality, Service, Professional, Drinks">
+      <meta name="theme-color" content="#000000">
       <link rel="stylesheet" type="text/css" href="bijoumain.css">
 
+      <!-- Google Fonts-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -22,10 +24,19 @@
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/site.webmanifest">
-      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
-      <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="theme-color" content="#333333">
 
+      <!-- Social Media -->
+      <meta property="og:title" content="Bijou Bartender Alliance">
+      <meta property="og:description" content="Bijou Bartender Alliance is a hospitality-driven event curation service. We bring your vision to life with experienced bartenders and delicious beverages.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://bijou-bar.com">
+      <meta property="og:image" content="https://bijou-bar.com/og-image.jpg">
+
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Bijou Bartender Alliance">
+      <meta name="twitter:description" content="Bijou Bartender Alliance is a hospitality-driven event curation service. We bring your vision to life with experienced bartenders and delicious beverages.">
+      <meta name="twitter:image" content="https://bijou-bar.com/og-image.jpg">
     </head>
 
     <!-- ------------- -->
@@ -34,59 +45,70 @@
 
     <body>
         
-      <!-- Header -->
-      <header>
-                
-        <div id="mobile-nav-button">
-          <a href="javascript:void(0);" class="nav-menu" onclick="navOpen()">
-            <img src="assets/bijou-menu.svg" alt="Navigation Menu" />
-          </a>
-        </div>
-        <nav id="navigation">
-          <a class="nav-link home" href="index.html">HOME</a>
-          <a class="nav-link active" href="ourstory.html">OUR STORY</a>
-          <!-- <a class="nav-link" href="booking.html">BOOKING</a> -->
-          <a class="bijou-logo" href="index.html">
-            <img src="assets/bijou-arch.png" />
-          </a>
-          <!-- <a class="nav-link" href="gallery.html">GALLERY</a> -->
-          <a class="nav-link" href="contactus.html">CONTACT US</a>
-        </nav>
-        <div id="mobile-nav-close">
-          <a href="javascript:void(0);" class="nav-menu" onclick="navClose()">
-            <img src="assets/bijou-close.svg" alt="Close" />
+      <header>  
+        <div id="mobile-navbar">
+          <img src="assets/bijou-full.png" alt="Bijou"/>
+          <a href="javascript:void(0);" class="nav-menu" onclick="toggleNav()">
+            <svg class="nav-menu" width="45" height="45" xmlns="http://www.w3.org/2000/svg">
+              <rect class="menu-top" width="45" height="10" x="0" y="5"/>
+              <rect class="menu-bottom" width="45" height="10" x="0" y="30"/>
+            </svg>
           </a>
         </div>
 
+        <nav id="navigation">
+          <a class="nav-link home" href="index.html">HOME</a>
+          <a class="nav-link active" href="ourstory.html" tabindex="-1">OUR STORY</a>
+          <a class="bijou-logo" href="index.html">
+            <img src="assets/bijou-full.png" alt="Bijou Home" title="Home" />
+          </a>
+          <a class="nav-link" href="contactus.html">CONTACT US</a>
+        </nav>
       </header>
         
         <!-- ------------------- -->
         <!-- Page Content (Our Story)-->
         <!-- ------------------- -->
 
-
         <div id="content">
-          <div id="spacer"></div>
-          <img src="assets/cocktail-temp-5.jpg" class="center-spread" alt="Cocktail with garnish." />
-          <h1>Our Story</h1>
-          <p>
-            The owners, Cameron & Jennifer Webster, have spent their careers managing fine dining bars and restaurants around Detroit, Michigan and western North Carolina.
-            They decided to pivot roles after attending numerous weddings and formal events and realizing that there was a desperate need for event servers and bartenders who put hospitality first. 
-            With hospitality as our focus, we are able to produce high quality, personalized beverages and interactions for any occasion. We have started an alliance of bartenders that have worked 
-            behind restaurant bars and have completed BarSmarts, an in-depth bartending and hospitality course; insuring staff is well versed in mixology as well as customer service. 
-            We will bring glassware appropriate for the beverages you select for the menu. 
-          </p>
-          <p>
-            Foods and beverages are first eaten with the eyes, then the touch, then the scent, then the taste- and we don't want you to sacrifice half of any experience on your special day. 
-            Our pleasure will be to co-create what you envision, then bring it to life with the utmost care. We'll take care of the fine details, so you can relax and enjoy.
-          </p>
-          <p>
+          <div id="nav-space">
+            <svg height="7" width="100%" viewBox="0 0 176 7" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M176 0 L0 0 L173 6 z" />
+            </svg>
+            <img class="deco" src="assets/bijou-arch.png" />
+            <svg height="7" width="100%" viewBox="0 0 176 7" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0 L176 0 L3 6 z" />
+            </svg>
+          </div>
+
+          <h1><span class="first">O</span>UR <span class="first">S</span>TORY</h1>
+
+          <div id="story-wrapper">
+            <img class="in-left" src="assets/cocktail-temp-5.jpg" alt="Cocktail with garnish." />
+            <p>
+              Cameron & Jennifer Webster have spent their careers managing fine dining bars and restaurants across Detroit, Michigan and western North Carolina.
+              They decided to pivot roles after attending numerous formal events and realizing that there was a desperate need for event curators who put hospitality first. 
+              With hospitality as our focus, we produce high quality, personalized beverages and interactions for any occasion. We have started an alliance of bartenders that have worked 
+              behind reputable bars and have completed BarSmarts, an in-depth bartending and hospitality course insuring staff is well versed in mixology as well as customer service. 
+              We will bring appropriate glassware for the beverages you select for the menu. 
+            </p>
+          </div>
+          <div id="story-wrapper" class="reverse">
+            <p>
+              Food and beverages are first eaten with the eyes, then the touch, then the scent, then the taste&mdash; and we don't want you to sacrifice any of that experience on your special day. 
+              Our pleasure will be to co-create what you envision, then bring it to life with the utmost care. <br><br>We'll take care of the fine details, so you can relax and enjoy.
+            </p>
+            <img class="in-right" src="assets/cocktail-temp-4.jpg" alt="A bottle of gin being poured into a glass." />
+          </div>
+
+          <br></br>
+          <p class="licensed">
             Bijou Bartender Alliance is fully licensed for liquor and liability.
           </p>
         </div>
 
         <footer>
-          <img src="assets/bijou-full.png" alt="Bijou"/>
+          <img src="assets/bijou-type.png" alt="Bijou"/>
           <span>&copy;&#xFE0E; 2025 Bijou Bartender Alliance</span>
         </footer>
         
