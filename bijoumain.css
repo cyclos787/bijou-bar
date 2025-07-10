@@ -116,8 +116,7 @@ a.bijou-button, button.bijou-button {
   margin: 2rem;
   transition: 
     text-shadow 200ms, 
-    color 200ms, 
-    font-size 200ms;
+    color 200ms;
 }
 .bijou-button .border {
   position: absolute;
@@ -138,12 +137,13 @@ a.bijou-button, button.bijou-button {
 }
 .bijou-button span {
   margin-top: 4px;
+  transition: transform 200ms;
 }
-.bijou-button:hover,
-.bijou-button:focus-visible {
+.bijou-button:hover span,
+.bijou-button:focus-visible span {
   color: #FFFBEE;
   text-shadow: 0px 0px 8px #FFD3A1, 0px 0px 8px #FFD3A1;
-  font-size: 1.5rem;
+  transform: scale(1.05);
 }
 .bijou-button:hover .border.wide,
 .bijou-button:focus-visible .border.wide {
